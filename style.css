@@ -1,0 +1,131 @@
+body {
+  background-color: #1d1d1d;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 66pt;
+  margin: 0;
+  position: fixed;
+  z-index: 2;
+}
+
+.title {
+  height: 120px;
+}
+
+
+.fixed {
+  margin: -20px;
+  z-index: 1;
+  position: fixed;
+  padding-top: 0;
+  background-color: #1d1d1d;
+  width: 80%;
+}
+
+
+header {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display:inline-block;
+  text-decoration: none;
+  padding: 22px;
+}
+
+li:hover {
+  background-color: gray;
+}
+
+
+.line {
+  height: 2px;
+  background-color: white;
+}
+
+main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#webdevpage {
+  display: block;
+}
+
+#aboutpage, #soundpage {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 40px;
+ /*outline: red 2px dotted;*/
+}
+
+.box {
+  display: inline-block;
+  overflow: hidden;
+  align-items: center;
+  margin: 2px;
+  width: 446px;
+  height: 450px;
+  /*outline: blue 2px dotted;*/
+}
+
+.top-left {
+  border-right: white 2px solid;
+  border-bottom: white 2px solid;
+}
+
+.bottom-right {
+  border-left: white 2px solid;
+  border-top: white 2px solid;
+}
+
+.img {
+  margin: 4px auto;
+  height: 350px;
+  width: 350px;
+  cursor: pointer;
+  background-size:contain;
+  /*outline: yellow 2px dashed;*/
+
+}
+
+.vid {
+  padding-top: 20px;
+  overflow: auto;
+  margin: 0 auto;
+  height: 325px;
+  width: 420px;
+  /*outline: yellow 2px dashed;*/
+}
+
+.caption {
+  display: table;
+  margin: auto;
+  width: 350px;
+  height: 100px;
+  /*outline: lime dotted 2px;*/
+}
+
+.captiontext {
+  display: table-cell;
+  vertical-align: middle;
+}
