@@ -12,6 +12,10 @@ h1 {
   z-index: 2;
 }
 
+p {
+  font-size: 1.2em;
+}
+
 .title {
   height: 120px;
 }
@@ -53,6 +57,11 @@ li:hover {
   background-color: gray;
 }
 
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
 
 .line {
   height: 2px;
@@ -64,18 +73,29 @@ main {
   margin: 0 auto;
 }
 
-#webdevpage {
-  display: block;
+img {
+  /*align-self: center;
+  display: block;*/
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  padding: 3px;
+  border: lemonchiffon 1px solid;
 }
 
-#aboutpage, #soundpage {
+#aboutpage {
+  display: block;
+  text-align: center;
+}
+
+#webdevpage, #soundpage {
   display: none;
 }
 
 .container {
   margin: 0 auto;
   padding: 40px;
- /*outline: red 2px dotted;*/
+  /*outline: red 2px dotted;*/
 }
 
 .box {
@@ -128,4 +148,9 @@ main {
 .captiontext {
   display: table-cell;
   vertical-align: middle;
+}
+
+strong {
+  font-size: 1.1em;
+  font-weight: bolder;
 }

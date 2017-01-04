@@ -18,8 +18,8 @@
       <li id="about">About</li>
       <li id="webdev">Web Development</li>
       <li id="sound">Sound Design</li>
-      <li>Resume</li>
-      <li>Contact</li>
+      <li onclick="window.open('Resume.pdf','mywindow');">Resume</li>
+      <li><a href="mailto:drewswinburne@gmail.com">Contact</a></li>
     </ul>
     <div class="line">  </div>
   </nav>
@@ -27,7 +27,12 @@
 <!-- About -->
 <main id="aboutpage">
 <h2>About Me</h2>
+<img src="drewheadshot.png" alt="">
+<div class="container">
 
+<h3>Hi!</h3> <p>I'm a full-stack developer with a background in digital audio and computer music. I love working with new technologies, exploring new possibilities, and digging into problems to find creative solutions.</p>
+
+</div>
 
 </main>
 
@@ -39,11 +44,11 @@
   <h2>Web Development</h2>
   <div class="container">
     <div class="box top-left">
-      <div class="img" onclick="window.open('http://stockalerts-dashboard.herokuapp.com/#/home','mywindow');" style="background-image: url('showspace2.png')">
+      <div class="img" onclick="window.open('http://stockalerts-dashboard.herokuapp.com/#/home','mywindow');" style="background-image: url('stocks.gif')">
       </div>
       <div class="caption">
         <div class="captiontext">
-          <strong>Stock Alerts: </strong>Stock watchlist application that lets users set custom alerts on stocks
+          <strong>Stock Alerts: </strong>Stock watchlist application that lets users set custom alerts on stocks they are interested in buying and selling. Metrics update in real-time with data from Yahoo Finance.
         </div>
       </div>
     </div>
@@ -63,17 +68,17 @@
       </div>
       <div class="caption">
         <div class="captiontext">
-          A Ruby on Rails photo gallery with an Angular front end
+          <strong>Drift: </strong>A Ruby on Rails photo gallery with an Angular front end
         </div>
       </div>
     </div>
 
     <div class="box bottom-right">
-      <div class="img" style="background-image: url('http://www.placecage.com/g/350/350')">
+      <div class="img" onclick="window.open('https://drewswinburne.github.io/hangman','mywindow');"  style="background-image: url('hangman.png')">
       </div>
       <div class="caption">
         <div class="captiontext">
-          Here is some sample text for a project or something. imagine there are more words in this one. like, lots more words. text text text typing some more words this is a test.
+          <strong>Hangman: </strong>Two-player javascript version of the classic pen-and-paper game
         </div>
       </div>
     </div>
