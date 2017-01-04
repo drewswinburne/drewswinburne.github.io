@@ -94,8 +94,10 @@ img {
 
 .container {
   margin: 0 auto;
-  padding: 40px;
+  /*padding: 40px;*/
   /*outline: red 2px dotted;*/
+  display: flex;
+  justify-content: center;
 }
 
 .box {
@@ -125,7 +127,10 @@ img {
   cursor: pointer;
   background-size:contain;
   /*outline: yellow 2px dashed;*/
+}
 
+.img:hover {
+  outline: white 1px solid;
 }
 
 .vid {
