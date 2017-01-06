@@ -81,11 +81,25 @@ img {
   border-radius: 50%;
   padding: 3px;
   border: lemonchiffon 1px solid;
+  margin: 15px;
+}
+
+.link {
+  height: 120px;
+  width: 120px;
+}
+
+.link:hover {
+  height: 123px;
+  width: 123px;
+  opacity: .6;
+
 }
 
 #aboutpage {
   display: block;
   text-align: center;
+  width: 600px;
 }
 
 #webdevpage, #soundpage {
