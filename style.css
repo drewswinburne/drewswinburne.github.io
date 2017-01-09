@@ -57,9 +57,12 @@ li:hover {
   background-color: gray;
 }
 
+nav a {
+  color:inherit;
+}
+
 a {
   text-decoration: none;
-  color:inherit;
 }
 
 
@@ -90,10 +93,7 @@ img {
 }
 
 .link:hover {
-  height: 123px;
-  width: 123px;
   opacity: .6;
-
 }
 
 #aboutpage {
