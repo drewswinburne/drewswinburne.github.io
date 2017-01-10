@@ -8,28 +8,16 @@ h1 {
   font-family: 'Anton', sans-serif;
   font-size: 66pt;
   margin: 0;
-  position: fixed;
-  z-index: 2;
+  line-height: 1em;
 }
 
 p {
   font-size: 1.2em;
 }
 
-.title {
-  height: 120px;
-}
-
-
-.fixed {
-  margin: -20px;
-  z-index: 1;
-  position: fixed;
-  padding-top: 0;
+.scroll-fix {
   background-color: #1d1d1d;
-  width: 80%;
 }
-
 
 header {
   width: 80%;
@@ -40,31 +28,27 @@ h2 {
   text-align: center;
 }
 
-ul {
+.navflex {
   display: flex;
   justify-content: space-between;
-  list-style: none;
   padding: 0;
 }
 
-li {
-  display:inline-block;
-  text-decoration: none;
-  padding: 22px;
-}
-
-li:hover {
+.navbutton:hover {
   background-color: gray;
+  transition: .2s ease-in-out;
+  text-shadow: 0 0 3px, 0 0 4px gray;
 }
 
 nav a {
+  display:inline-block;
+  padding: 20px;
   color:inherit;
 }
 
 a {
   text-decoration: none;
 }
-
 
 .line {
   height: 2px;
@@ -77,8 +61,6 @@ main {
 }
 
 img {
-  /*align-self: center;
-  display: block;*/
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -108,7 +90,6 @@ img {
 
 .container {
   margin: 0 auto;
-  /*padding: 40px;*/
   /*outline: red 2px dotted;*/
   display: flex;
   justify-content: center;

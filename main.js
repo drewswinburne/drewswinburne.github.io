@@ -14,45 +14,18 @@ $(document).ready(function(){
       $('main:not(#soundpage)').css("display", "none");
       $("#soundpage").css("display", "block");
     })
- 
 
-    $(window).scroll(function() {
-      if ($(this).scrollTop()>60)
-     {
-        $('.title').hide({duration:400});
-        $('nav').addClass('fixed').animate("fast", {
-                top: 0
-            });
-        $('main').css("padding-top", "190px")
-     }
-    else
-     {
-       $('.title').show({duration:400});
-       $('nav').removeClass('fixed')
-       $('main').css("padding-top", "0px")
-
-     }
-
-    })
+    $('nav').scrollFix()
 
 
-    ////
-//     var mywindow = $(window);
-// var mypos = mywindow.scrollTop();
-// var up = false;
-// var newscroll;
-// mywindow.scroll(function () {
-//     newscroll = mywindow.scrollTop();
-//     if (newscroll > mypos && !up) {
-//         $('.header').stop().slideToggle();
-//         up = !up;
-//         console.log(up);
-//     } else if(newscroll < mypos && up) {
-//         $('.header').stop().slideToggle();
-//         up = !up;
-//     }
-//     mypos = newscroll;
-    ////
+const navButtons = document.querySelectorAll('.navbutton')
+navButtons.forEach(button => button.addEventListener('click', flashColor))
 
-
+  function flashColor(){
+    $(this).css("color", "blue");
+    setTimeout(colorBack, 100);
+    function colorBack(){
+      $('.navbutton').css("color", "white")
+    }
+  }
 })
