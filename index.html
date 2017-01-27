@@ -18,9 +18,9 @@
     </div>
   <nav>
     <div class="navflex">
-      <a class="navbutton" id="about">About</a>
-      <a class="navbutton" id="webdev">Web Development</a>
-      <a class="navbutton" id="sound">Sound Design</a>
+      <a class="navbutton" href="#aboutpage" id="about">About</a>
+      <a class="navbutton" href="#webdevpage" id="webdev">Web Development</a>
+      <a class="navbutton" href="#soundpage" id="sound">Sound Design</a>
       <a class="navbutton" onclick="window.open('Resume.pdf');">Resume</a>
       <a class="navbutton" href="mailto:drewswinburne@gmail.com">Contact</a>
     </div>
@@ -28,15 +28,17 @@
   </nav>
 </header>
 <!-- About -->
-<main id="aboutpage">
+<main class="anchor" id="aboutpage">
 <h2>About Me</h2>
 <img src="drewheadshot.png" alt="">
 
-<h4>Hi!</h4>
+<h3>Hello!</h3>
 
-<p>I'm a full-stack developer with a background in digital audio and computer music. I love working with new technologies, exploring new possibilities, and digging into problems to find creative solutions.</p>
+<p>
+I'm a web developer, music professional, and a spreadsheet enthusiast. I like building things and finding new and creative ways to learn from data. Always looking for new <a href="https://www.amazon.com/Flow-Psychology-Experience-Perennial-Classics/dp/0061339202">ideas to get excited about.</a></p>
 
-<p>My interests range from responsive, user-friendly design, to accounting and finance, to spatial electro-acoutistic composition. Having a passion for both art and technology means I'm equally comfortable managing data on the back-end or balancing aesthetics on the front-end.</p>
+<blockquote>"There is a way out of every box, a solution to every puzzle; it's just a matter of finding it" - Captain Picard</blockquote>
+
 <br>
 <div class="container">
   <img class="link" src="linkedin-5-xxl.png" onclick="window.open('https://www.linkedin.com/in/drewswinburne')" alt="linked in logo"><img class="link" src="white-github-512.png" onclick="window.open('http://www.github.com/drewswinburne')" alt="github logo">
@@ -47,7 +49,7 @@
 
 <!-- WEB DEVELOPMENT -->
 
-<main id="webdevpage">
+<main class="anchor" id="webdevpage">
   <h2>Web Development</h2>
   <div class="container">
     <div class="box top-left">
@@ -91,13 +93,16 @@
       </div>
     </div>
   </div>
+
 </main>
 
 <!-- Sound Design -->
 
-
-<main id="soundpage">
+<!-- <a  name="soundpage"></a> -->
+<main class="anchor" id="soundpage">
+  <div class="header">
   <h2>Sound Design</h2>
+</div>
   <div class="container">
     <div class="box top-left">
       <div class="vid">
