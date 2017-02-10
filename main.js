@@ -1,19 +1,19 @@
 $(document).ready(function(){
 
-  // $("#about").click(function(){
-  //     $('main:not(#aboutpage)').css("display", "none");
-  //     $("#aboutpage").css("display", "block");
-  //   })
-  //
-  // $("#webdev").click(function(){
-  //     $('main:not(#webdevpage)').css("display", "none");
-  //     $("#webdevpage").css("display", "block");
-  //   })
-  //
-  // $("#sound").click(function(){
-  //     $('main:not(#soundpage)').css("display", "none");
-  //     $("#soundpage").css("display", "block");
-  //   })
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 800);
+          return false;
+        }
+      }
+    });
+  });
 
     $('nav').scrollFix()
 
