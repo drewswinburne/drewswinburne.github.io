@@ -98,6 +98,12 @@ a:hover {
   background-color: white;
 }
 
+.line-sm {
+  display: none;
+  height: 2px;
+  background-color: white;
+}
+
 /*main {
   width: 70%;
   margin: 0 auto;
@@ -209,6 +215,10 @@ strong {
 }
 
 @media (max-width: 767px) {
+  h1 {
+    font-size: 3.5em;
+  }
+
   .container {
     /*outline: dotted 2px yellow;*/
     flex-direction: column;
@@ -229,14 +239,17 @@ strong {
  .caption, .vid{
    min-height: 100px;
    width: 320px;
-   /*vertical-align: top;*/
  }
 
  .captiontext {
-   /*vertical-align: top;*/
-   /*background-color: purple;*/
-   /*outline: blue dotted 2px;*/
    text-align: center;
+ }
+ .line {
+   display: none;
+ }
+
+ .line-sm {
+   display: block;
  }
 
 }
@@ -249,4 +262,6 @@ strong {
     max-width: 370px;
     min-width: 270px;
   }
+
+
 }
