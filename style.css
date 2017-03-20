@@ -34,6 +34,21 @@ h1 {
   line-height: 1em;
 }
 
+span:hover {
+  color: #1d1d1d;
+  cursor: pointer;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
 h2 {
   font-size: 1.8em;
   text-align: center;
@@ -71,18 +86,24 @@ header {
 
 .navbutton:hover {
   color: white;
-  background-color: gray;
-  transition: .2s ease-in-out;
+  background-color: DimGray;
+  transition: .15s ease-in-out;
   text-shadow: 0 0 3px, 0 0 4px gray;
   cursor: pointer;
+
+}
+
+.navbutton {
+  flex: 1;
 }
 
 nav a {
+  text-align: center;
   display:inline-block;
-  padding: 20px;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-decoration: none;
+  font-size: 1.2em;
 }
 
 a {
@@ -121,6 +142,7 @@ img {
 .link {
   height: 100px;
   width: 100px;
+  margin: 15px;
 }
 
 .link:hover {
