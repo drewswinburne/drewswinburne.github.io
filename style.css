@@ -63,6 +63,11 @@ h4 {
   font-size: 1.4em;
   /*font-family: 'Poppins', sans-serif;*/
 }
+h6:hover {
+  transition: .15s ease-in-out;
+  text-shadow: 0 0 3px, 0 0 4px gray;
+  cursor: pointer;
+}
 
 p {
 
@@ -84,13 +89,12 @@ header {
   padding: 0;
 }
 
-.navbutton:hover {
+.navbutton:hover{
   color: white;
   background-color: DimGray;
   transition: .15s ease-in-out;
   text-shadow: 0 0 3px, 0 0 4px gray;
   cursor: pointer;
-
 }
 
 .navbutton {

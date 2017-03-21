@@ -7,8 +7,11 @@ var colors = ["DarkTurquoise", "DeepPink", "Gold"]
 var j = 0
 
 window.onload = function(){
+  makeMarquee()
+  function makeMarquee(){
   const marqueeText = "DREW SWINBURNE"
   const marqueeArray = marqueeText.split("")
+  var wincondition = false;
   var items = []
     for (var i = 0;i<marqueeArray.length;i++){
       function addALetter(i) {
@@ -33,9 +36,25 @@ window.onload = function(){
         this.colorNumber = 0;
       }
       this.style.setProperty('color', color)
-      checkColor()
+      checkColor(this.colorNumber)
+      if (wincondition){
+        var item = document.createElement("h6")
+        var div = document.querySelector(".title")
+        div.appendChild(item)
+        item.innerHTML = "reset";
+        item.onclick = endGame
+      }
     }
+
+    function endGame(){
+      $('h1').remove()
+      $('h6').remove()
+      $('.title').append("<h1></h1>")
+      makeMarquee()
+    }
+
     function rainbow(){
+      wincondition = true;
       console.log("hooray");
       for (var i = 0; i<items.length;i++){
         j = (j + 1) % 3
@@ -55,15 +74,19 @@ window.onload = function(){
     }
 
 
-    function checkColor(){
+    function checkColor(colorNumber){
       var i = 0;
-      //we'll just set that space to 1
-      items[4].colorNumber = 1;
+      //so you don't have to click on the space
+      items[4].colorNumber = colorNumber;
       recursive();
       function recursive(){
-        if (items[i].colorNumber == 1){
+        if (items[i].colorNumber == colorNumber){
         console.log(i);
         i++;
+        winCheck();
+
+      }
+        function winCheck(){
           if (i == 14){
             i = 0;
             rainbow()
@@ -73,6 +96,7 @@ window.onload = function(){
         }
       }
     }
+}
 }
 
 
