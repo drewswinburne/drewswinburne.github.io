@@ -203,9 +203,9 @@ img {
   height: 350px;
   width: 350px;
   cursor: pointer;
-  background-size:contain;
+  background-size: cover;
   box-shadow: 10px 10px 5px #141414;
-
+  background-repeat: no-repeat;
   /*outline: yellow 2px dashed;*/
 }
 
