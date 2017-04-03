@@ -23,6 +23,10 @@ body {
   /*outline: yellow dotted 2px;*/
 }
 
+.title {
+  height: 86px;
+}
+
 .spacer {
   height: 128px;
 }

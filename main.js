@@ -1,4 +1,4 @@
-$(document).ready(function(){
+// $(document).ready(function(){
 
 console.log("hints are in the js file")
 //Headline flash
@@ -32,9 +32,9 @@ window.onload = function(){
     function changeColor(){
       let color = colors[this.colorNumber]
       this.colorNumber++;
-      if (this.colorNumber > colors.length){
+        if (this.colorNumber > colors.length){
         this.colorNumber = 0;
-      }
+        }
       this.style.setProperty('color', color)
       checkColor(this.colorNumber)
       if (wincondition){
@@ -46,9 +46,18 @@ window.onload = function(){
       }
     }
 
+    function addReset(){
+      var item = document.createElement("h6")
+      var div = document.querySelector(".title")
+      div.appendChild(item)
+      item.innerHTML = "reset";
+      item.onclick = endGame
+    }
+
     function endGame(){
       $('h1').remove()
       $('h6').remove()
+      $('span').removeClass('reset')
       $('.title').append("<h1></h1>")
       makeMarquee()
     }
@@ -96,7 +105,12 @@ window.onload = function(){
         }
       }
     }
-}
+    //TODO: make this work without an error
+     document.querySelector(".reset").addEventListener('click', endGame)
+
+  }
+  $('nav').scrollFix()
+
 }
 
 
@@ -116,10 +130,10 @@ window.onload = function(){
     });
   });
 
-$('nav').scrollFix()
 
 const navButtons = document.querySelectorAll('.navbutton')
 navButtons.forEach(button => button.addEventListener('click', flashColor))
+
 
   function flashColor(){
     $(this).css("color", colors[j]);
@@ -129,4 +143,4 @@ navButtons.forEach(button => button.addEventListener('click', flashColor))
       $('.navbutton').css("color", "white")
     }
   }
-})
+// })
