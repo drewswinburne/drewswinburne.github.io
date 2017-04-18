@@ -20,6 +20,12 @@ body {
   max-width: 600px;
   margin: 12px;
   /*margin-left: 80px;*/
+}
+
+.biocontainer {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
   /*outline: yellow dotted 2px;*/
 }
 
@@ -28,7 +34,7 @@ body {
 }
 
 .spacer {
-  height: 128px;
+  height: 132px;
 }
 
 h1 {
@@ -61,10 +67,13 @@ h2 {
 h3 {
   font-size: 36pt;
   line-height: .4em;
+  text-align: center;
 }
 
 h4 {
   font-size: 1.4em;
+  line-height: 32px;
+  text-align: justify;
   /*font-family: 'Poppins', sans-serif;*/
 }
 h6:hover {
@@ -148,8 +157,8 @@ img {
 }
 
 .link {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   margin: 15px;
 }
 
