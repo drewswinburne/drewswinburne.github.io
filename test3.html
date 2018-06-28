@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- Google Tag Manager -->
+<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5FMX3DR');</script> -->
+<!-- End Google Tag Manager -->
+<script type="text/javascript" src="js/ab.js"></script>
+<script type="text/javascript">
+
+var myAbTest = ABTest({
+    name: "Example_Test",
+    customVarSlot: 1,
+    variations: {
+        first_variation: function () {
+            window.location.href = "http://drewswinburne.github.io/test4.html"
+        },
+        // another_variation: function () {
+        //     document.getElementById("content").innerHTML = "This is another variation";
+        // },
+        control: function () { /* Empty function. */
+        }
+    }
+});
+
+</script>
+</head>
+<body>
+AB testing - version 1
+</body>
+</html>
