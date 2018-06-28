@@ -13,7 +13,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-5FMX3DR');</script>
 <!-- End Google Tag Manager -->
 <script type="text/javascript" src="js/ab.js"></script>
-<!-- <script type="text/javascript" src="js/tests.js"></script> -->
+<script type="text/javascript">
+var myAbTest = ABTest({
+    name: "Example_Test",
+    customVarSlot: 1,
+    variations: {
+        first_variation: function () {
+            console.log("first test");
+        },
+        another_variation: function () {
+            console.log("another variation");
+        },
+        third_variation: function () {
+            console.log("3rd variation");
+        },
+        control: function () { /* Empty function. */
+          console.log("control");
+        }
+    }
+});
+
+</script>
 </head>
 <body>
 AB testing - version 2
