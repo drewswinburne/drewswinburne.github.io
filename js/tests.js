@@ -6,10 +6,10 @@ var myAbTest = ABTest({
             console.log("first test");
         },
         another_variation: function () {
-            window.location.href = "http://drewswinburne.github.io/test2.html?abjs-setvar-Example_Test=another_variation&abjs-setcookie=yes"
+            window.location.href = "//drewswinburne.github.io/test2.html"
         },
         third_variation: function () {
-            window.location.href = "http://drewswinburne.github.io/test4.html?abjs-setvar-Example_Test=third_variation&abjs-setcookie=yes"
+            window.location.href = "//drewswinburne.github.io/test4.html"
         },
         control: function () { /* Empty function. */
           console.log("control");
