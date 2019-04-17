@@ -17,7 +17,20 @@ dataLayer.push({
    'transactionId': Date.now(),
    'transactionAffiliation': 'Acme Clothing',
    'transactionTotal': Number(amount).toFixed(2),
-
+   'ecommerce': {
+       'purchase': {
+         'actionField': {
+           'id': Date.now(),    // Transaction ID
+           'revenue': amount               // Total donation
+         },
+         'products': [{                            // List of productFieldObjects.
+           'name': "product name",     // Name or ID is required.
+           'id': 'form id',
+           'price': amount,
+           'quantity': 1
+          }]
+          }
+     }
 });
 
 </script>
